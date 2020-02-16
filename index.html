@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- jQuery -->
+        <script src="js/jquery-3.2.1.min.js" type="text/javascript"></script>
+
+        <!-- Popper.js -->
+        <script src="js/popper.min.js" type="text/javascript"></script>
+
+        <!-- Bootstrap 4 Beta. -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+        <!-- Google Web Fonts - Open Sans i Raleway. -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+
+        <!-- Font Awesome. -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+
+        <!-- Style do Edytowania. -->
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <header>
+            
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    
+                    <!-- Books -->
+                    <div class="col">
+
+                        <h1>Books</h1>
+                        
+                        <div class="button-group"></div>
+                        
+                        <form id="book-form" action="/">
+                            <div class="form-group">
+                                <label for="book-title-input">Title</label>
+                                <input id="book-title-input" class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="book-author-input">Author</label>
+                                <input id="book-author-input" class="form-control" type="text">
+                            </div>
+                            <button id="new-book-button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button>
+                            <button id="confirm-edit-book-button" class="d-none btn btn-primary btn-sm"><i class="fa fa-edit"></i> Save</button>
+                            <button id="cancel-edit-book-button" class="d-none btn btn-warning btn-sm"><i class="fa fa-close"></i> Cancel</button>
+                        </form>
+
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody id="books-table-body">
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Readers -->
+                    <div class="col">
+                        <h1>Readers</h1>
+                        
+                        <div class="button-group"></div>
+                        
+                        <form id="reader-form" action="/">
+                            <div class="form-group">
+                                <label for="reader-name-input">Name</label>
+                                <input id="reader-name-input" class="form-control" type="text">
+                            </div>
+                            <div class="form-group">
+                                <label for="reader-age-input">Age</label>
+                                <input id="reader-age-input" class="form-control" type="number">
+                            </div>
+                            <button id="new-reader-button" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add</button>
+                            <button id="confirm-edit-reader-button" class="d-none btn btn-primary btn-sm"><i class="fa fa-edit"></i> Save</button>
+                            <button id="cancel-edit-reader-button" class="d-none btn btn-warning btn-sm"><i class="fa fa-close"></i> Cancel</button>
+                        </form>
+
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Age</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody id="readers-table-body">
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- Lends -->
+                    <div class="col">
+                        <h1>Lends</h1>
+
+                        <div class="button-group"></div>
+
+                        <table class="table table-hover table-sm">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Name</th>
+                                    <th>Date</th>
+                                    <th>Options</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lends-table-body">
+                                                                
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
